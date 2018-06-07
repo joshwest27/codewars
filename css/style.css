@@ -1,0 +1,15 @@
+header {
+  background-color: lightgrey;
+  text-align: center;
+  height: 50px;
+  padding-top: 3px;
+  padding-bottom: 25px;
+  margin-top: 10px
+}
+
+#results {
+  border: solid 2px black;
+  padding-top: 10px;
+  text-align: center;
+  height: 200px;
+}
