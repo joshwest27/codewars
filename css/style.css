@@ -8,11 +8,11 @@ header {
   font-size: 40px;
 }
 
-#results {
+.results {
   border: solid 2px black;
   padding-top: 10px;
   text-align: center;
-  height: 200px;
+  height: 150px;
 }
 
 button {
@@ -21,7 +21,31 @@ button {
   margin-top: 20px;
 }
 
-#show {
+#show1 {
+  font-size: 35px;
+  font-style: italic;
+  color: red;
+}
+
+#show2 {
+  font-size: 35px;
+  font-style: italic;
+  color: red;
+}
+
+#show3 {
+  font-size: 35px;
+  font-style: italic;
+  color: red;
+}
+
+#show4 {
+  font-size: 35px;
+  font-style: italic;
+  color: red;
+}
+
+#show5 {
   font-size: 35px;
   font-style: italic;
   color: red;

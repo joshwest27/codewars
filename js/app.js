@@ -40,6 +40,7 @@ function reverseString(str) {
   return revString;
 }
 
+// for each
 function reverseString(str) {
   let revString = '';
   str.split('').forEach(function(char) {
@@ -48,13 +49,21 @@ function reverseString(str) {
   return revString;
 }
 
+// display answer
+function myAnswerOne() {
+  let answer = document.getElementById('show1').innerHTML = reverseString('hello');
 
+};
 
-// const output = reverseString('hello');
-// console.log(output);
+// Code challenge *Palindrome*
 
+// check if sting is a palindrome
+function isPalindrome(str) {
+  let revString = str.split('').reverse().join('');
+  return revString === str;
+}
 
-function myAnswer() {
-  let answer = document.getElementById('show').innerHTML = reverseString('hello');
+function myAnswerTwo() {
+  let answer = document.getElementById('show2').innerHTML = isPalindrome('radar');
 
 };
