@@ -41,13 +41,13 @@ function reverseString(str) {
 }
 
 // for each
-function reverseString(str) {
-  let revString = '';
-  str.split('').forEach(function(char) {
-    revString = char + revString;
-  });
-  return revString;
-}
+// function reverseString(str) {
+//   let revString = '';
+//   str.split('').forEach(function(char) {
+//     revString = char + revString;
+//   });
+//   return revString;
+// }
 
 // display answer
 function myAnswerOne() {
@@ -67,3 +67,7 @@ function myAnswerTwo() {
   let answer = document.getElementById('show2').innerHTML = isPalindrome('radar');
 
 };
+
+// output
+const output = isPalindrome('hello');
+console.log(output);
