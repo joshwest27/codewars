@@ -41,15 +41,15 @@ function reverseString(str) {
 }
 
 // for each
-// function reverseString(str) {
-//   let revString = '';
-//   str.split('').forEach(function(char) {
-//     revString = char + revString;
-//   });
-//   return revString;
-// }
+function reverseString(str) {
+  let revString = '';
+  str.split('').forEach(function(char) {
+    revString = char + revString;
+  });
+  return revString;
+}
 
-// display answer
+// display answer one
 function myAnswerOne() {
   let answer = document.getElementById('show1').innerHTML = reverseString('hello');
 
@@ -63,11 +63,33 @@ function isPalindrome(str) {
   return revString === str;
 }
 
+// display answer two
 function myAnswerTwo() {
   let answer = document.getElementById('show2').innerHTML = isPalindrome('radar');
 
 };
 
+
+// Code challenge *Reverse and integer
+// reverse and integer
+function reverseInt(int) {
+  let revInt = int.toString().split('').reverse().join('');
+  return parseInt(revInt) * Math.sign(int) ;
+}
+
+// display answer three
+function myAnswerThree() {
+  let answer = document.getElementById('show3').innerHTML = reverseInt(-12345);
+
+};
+
+
+// Code challenge *Capitalize letters
+// capitalize the first letter of each word
+function capitalizeLetters(str) {
+
+}
+
 // output
-const output = isPalindrome('hello');
-console.log(output);
+// const output = isPalindrome('hello');
+// console.log(output);
