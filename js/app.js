@@ -52,7 +52,6 @@ function reverseString(str) {
 // display answer one
 function myAnswerOne() {
   let answer = document.getElementById('show1').innerHTML = reverseString('hello');
-
 };
 
 // Code challenge *Palindrome*
@@ -66,7 +65,6 @@ function isPalindrome(str) {
 // display answer two
 function myAnswerTwo() {
   let answer = document.getElementById('show2').innerHTML = isPalindrome('radar');
-
 };
 
 
@@ -80,15 +78,23 @@ function reverseInt(int) {
 // display answer three
 function myAnswerThree() {
   let answer = document.getElementById('show3').innerHTML = reverseInt(-12345);
-
 };
 
 
 // Code challenge *Capitalize letters
 // capitalize the first letter of each word
 function capitalizeLetters(str) {
-
+  let strArr = str.toLowerCase().split(' ');
+  for(let i = 0; i < strArr.length; i++) {
+    strArr[i] = strArr[i].substring(0, 1).toUpperCase() + strArr[i].substring(1);
+  }
+  return strArr.join(' ');
 }
+
+//display answer four
+function myAnswerFour() {
+  let answer = document.getElementById('show4').innerHTML = capitalizeLetters('i love javascript');
+};
 
 // output
 // const output = isPalindrome('hello');
