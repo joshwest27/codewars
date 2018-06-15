@@ -91,6 +91,21 @@ function capitalizeLetters(str) {
   return strArr.join(' ');
 }
 
+// another variation with map
+function capitalizeLetters(str) {
+  return str.toLowerCase().split(' ').map(function(word) {
+    return word[0].toUpperCase() + word.substring(1);
+  })
+  .join(' ');
+}
+
+// another variation with regex
+function capitalizeLetters(str) {
+  return str.replace(/\b[a-z]/gi, function(char) {
+    return char.toUpperCase();
+  })
+}
+
 //display answer four
 function myAnswerFour() {
   let answer = document.getElementById('show4').innerHTML = capitalizeLetters('i love javascript');
