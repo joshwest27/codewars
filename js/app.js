@@ -111,7 +111,7 @@ function myAnswerFour() {
   let answer = document.getElementById('show4').innerHTML = capitalizeLetters('i love javascript');
 };
 
-// Code challege *Max charaters
+// Code challege *Max characters
 // most common character in String
 function maxCharacter(str) {
   let charMap = {};
@@ -135,6 +135,32 @@ function maxCharacter(str) {
 }
 maxCharacter('javascript');
 
+//display answer five
+function myAnswerFive() {
+  let answer = document.getElementById('show5').innerHTML = maxCharacter('javascript');
+};
+
+// Code challenge *Max characters
+// fizz buzz
+function fizzBuzz() {
+  for(let i = 1; i <= 100; i++) {
+    if(i % 3 === 0 && i % 5 === 0) {
+      console.log('fizzbuzz');
+    }else if(i % 3 === 0) {
+      console.log('fizz');
+    }else if(i % 5 === 0) {
+      console.log('buzz');
+    }else{
+      console.log(i);
+    }
+  }
+}
+
+//display answer six
+function myAnswerSix() {
+  let answer = document.getElementById('show6').innerHTML = "Open developer tool to see this result!";
+};
+
 // output
-const output = maxCharacter('javascript');
+const output = fizzBuzz();
 console.log(output);
