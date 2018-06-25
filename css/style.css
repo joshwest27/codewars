@@ -68,3 +68,15 @@ button:hover {
   font-style: italic;
   color: red;
 }
+
+.cont {
+  background-color: lightgrey;
+  font-family: fantasy;
+  font-size: 40px;
+  border: solid 3px black;
+  padding-top: 1px;
+  padding-bottom: 12px;
+  text-align: center;
+  height: 150px;
+  margin-top: -3px;
+}

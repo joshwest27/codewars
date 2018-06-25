@@ -1,6 +1,6 @@
-// Code challenges *Reverse string variations*
 'use strict';
 
+// Code challenges *Reverse string variations*
 // reverse a string
 function reverseString(str) {
   let strArr = str.split('');
@@ -55,7 +55,6 @@ function myAnswerOne() {
 };
 
 // Code challenge *Palindrome*
-
 // check if sting is a palindrome
 function isPalindrome(str) {
   let revString = str.split('').reverse().join('');
