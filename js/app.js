@@ -16,7 +16,7 @@ function reverseString(str) {
 // for loop variation decreasing
 function reverseString(str) {
   let revString = '';
-  for(let i = str.length - 1; i >= 0; i--) {
+  for(let i = str.length; i >= 0; i--) {
     revString = revString + str[i];
   }
   return revString;
@@ -47,6 +47,13 @@ function reverseString(str) {
     revString = char + revString;
   });
   return revString;
+}
+
+// reduce
+function reverseString(str) {
+  return str.split('').reduce(function(revString, char) {
+    return char + revString;
+  }, '');
 }
 
 // display answer one
@@ -161,5 +168,5 @@ function myAnswerSix() {
 };
 
 // output
-const output = fizzBuzz();
+const output = reverseString('hello');
 console.log(output);
